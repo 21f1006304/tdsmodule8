@@ -14,7 +14,12 @@ def user_input_features():
   data = {'NUMBER1': number1,
       'NUMBER2': number2
   }
-  return number1 + number2
+  if (number1 > number2) :
+    return number1 - number2
+  elif (number2 > number1) :
+    number2 - number1
+  else :
+    return 0
 
 df = user_input_features()
 st.subheader("This is subheader")
